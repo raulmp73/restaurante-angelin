@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería — Restaurante Angelín · Almoradí</title>
+  <meta name="description" content="La casa de campo, los salones, la terraza y los platos del Restaurante Angelín en Almoradí. Una mirada visual al sitio.">
+  <meta name="theme-color" content="#1f1b16">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Inicio">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 40 40" width="36" height="36"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M13 26 L20 11 L27 26 Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="20" cy="20" r="2" fill="currentColor"/></svg>
+    </span>
+    <span class="brand-text">
+      <span class="brand-name">Angelín</span>
+      <span class="brand-since">Almoradí · Vega Baja</span>
+    </span>
+  </a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="sr-only">Abrir menú</span><span class="bars" aria-hidden="true"></span></button>
+  <nav id="menu-principal" class="site-nav" aria-label="Principal">
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">La casa</a>
+    <a href="carta.html">Carta</a>
+    <a href="galeria.html" class="is-active">Galería</a>
+    <a href="visitanos.html">Visítanos</a>
+    <a href="reservas.html" class="nav-cta">Reservar</a>
+  </nav>
+</header>
+
+<main id="contenido">
+
+  <section class="page-header">
+    <div class="container">
+      <p class="kicker">Galería</p>
+      <h1>Una mirada a la casa.</h1>
+      <p class="lede">Las fotos finales las trae el equipo de Angelín. Estos huecos son recordatorios para los seis encuadres que mejor cuentan el sitio: fachada de la casa de campo, salón principal, comedor privado, terraza, alcachofas y marisco.</p>
+    </div>
+  </section>
+
+  <section class="section section-galeria">
+    <div class="container">
+      <div class="gallery">
+        <figure data-tag="Fachada"><span aria-hidden="true">🏡</span><figcaption>La casa de campo</figcaption></figure>
+        <figure data-tag="Salón"><span aria-hidden="true">🪑</span><figcaption>Salón principal</figcaption></figure>
+        <figure data-tag="Privado"><span aria-hidden="true">🍷</span><figcaption>Comedor privado</figcaption></figure>
+        <figure data-tag="Terraza"><span aria-hidden="true">🌳</span><figcaption>Terraza</figcaption></figure>
+        <figure data-tag="Alcachofa"><span aria-hidden="true">🌿</span><figcaption>Alcachofa de la huerta</figcaption></figure>
+        <figure data-tag="Marisco"><span aria-hidden="true">🦐</span><figcaption>Marisco fresco</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-reservas">
+    <div class="container reserve-strip">
+      <div>
+        <p class="kicker">Te lo enseñamos en persona</p>
+        <h2>Pásate a conocernos.</h2>
+      </div>
+      <div class="reserve-actions">
+        <a class="btn btn-primary" href="reservas.html">Reservar mesa</a>
+        <a class="btn btn-ghost" href="visitanos.html">Horario y cómo llegar</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-brand">Restaurante Angelín</p>
+      <p class="muted">Cocina autóctona · Vega Baja · Almoradí</p>
+    </div>
+    <div>
+      <p class="footer-title">Visítanos</p>
+      <p>Camino de Catral, 33 · 03160 Almoradí (Alicante)</p>
+      <p>📞 965 70 08 78 · 965 770 23 30</p>
+    </div>
+    <div>
+      <p class="footer-title">Mapa del sitio</p>
+      <p><a href="historia.html">La casa</a> · <a href="carta.html">Carta</a></p>
+      <p><a href="galeria.html">Galería</a> · <a href="visitanos.html">Visítanos</a> · <a href="reservas.html">Reservas</a></p>
+    </div>
+    <div>
+      <p class="footer-title">Síguenos</p>
+      <p><a href="https://www.instagram.com/barrestauranteangelin/" rel="noopener" target="_blank">Instagram</a></p>
+    </div>
+  </div>
+  <p class="legal">© <span id="anyo"></span> Bar Restaurante Angelín S.L. Web de demostración construida para esta propuesta.</p>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
