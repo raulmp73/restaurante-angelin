@@ -268,6 +268,24 @@ em { font-style: italic; color: var(--terracota); }
   background: linear-gradient(0deg, rgba(31,27,22,0.78), rgba(31,27,22,0));
   color: var(--cream);
 }
+/* When the gallery contains real <img> elements */
+.gallery-photos figure { display: block; }
+.gallery-photos img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .6s ease;
+}
+.gallery-photos figure:hover img { transform: scale(1.06); }
+.gallery-photos figcaption {
+  font-weight: 500;
+  padding: 1.4rem 0.9rem 0.7rem;
+  background: linear-gradient(0deg, rgba(31,27,22,0.92) 35%, rgba(31,27,22,0) 100%);
+}
+.page-header code {
+  background: rgba(31, 27, 22, 0.06);
+  padding: 1px 6px; border-radius: 4px;
+  font-size: 0.85em;
+}
 
 /* -------- Reservas -------- */
 .section-reservas { background: var(--ink); color: var(--cream); }
