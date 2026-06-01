@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Visítanos — Restaurante Angelín · Almoradí</title>
-  <meta name="description" content="Restaurante Angelín en Camino de Catral 33, Almoradí. Horario, mapa y cómo llegar. Reservas 965 70 08 78.">
-  <meta name="theme-color" content="#1f1b16">
+  <title>Visítanos y reservas — Restaurante Angelín · Almoradí</title>
+  <meta name="description" content="Restaurante Angelín en Camino de Catral 55, Almoradí. Horario, mapa, teléfonos de reserva y servicios para celebraciones: banquetes hasta 50 personas, catering y domingos familiares.">
+  <meta name="theme-color" content="#1c2a1c">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -18,11 +18,15 @@
 <header class="site-header">
   <a class="brand" href="index.html" aria-label="Inicio">
     <span class="brand-mark" aria-hidden="true">
-      <svg viewBox="0 0 40 40" width="36" height="36"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M13 26 L20 11 L27 26 Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="20" cy="20" r="2" fill="currentColor"/></svg>
+      <svg viewBox="0 0 40 40" width="36" height="36">
+        <path d="M20 6 C12 12, 12 26, 20 34 C28 26, 28 12, 20 6 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M20 6 L20 34" stroke="currentColor" stroke-width="1.1"/>
+        <path d="M15 13 L20 15 M25 13 L20 15 M14 19 L20 21 M26 19 L20 21 M16 26 L20 28 M24 26 L20 28" stroke="currentColor" stroke-width="0.9" fill="none"/>
+      </svg>
     </span>
     <span class="brand-text">
       <span class="brand-name">Angelín</span>
-      <span class="brand-since">Almoradí · Vega Baja</span>
+      <span class="brand-since">Almoradí · Camino de Catral</span>
     </span>
   </a>
   <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="sr-only">Abrir menú</span><span class="bars" aria-hidden="true"></span></button>
@@ -31,8 +35,7 @@
     <a href="historia.html">La casa</a>
     <a href="carta.html">Carta</a>
     <a href="galeria.html">Galería</a>
-    <a href="visitanos.html" class="is-active">Visítanos</a>
-    <a href="reservas.html" class="nav-cta">Reservar</a>
+    <a href="visitanos.html" class="nav-cta is-active">Visítanos</a>
   </nav>
 </header>
 
@@ -40,47 +43,92 @@
 
   <section class="page-header">
     <div class="container">
-      <p class="kicker">Visítanos</p>
-      <h1>Camino de Catral, 33.</h1>
-      <p class="lede">En el campo de Almoradí, a un paso del centro, con aparcamiento propio. Si vienes de la costa, los carteles de Catral son tu referencia.</p>
+      <p class="kicker">Visítanos y reserva</p>
+      <h1>Camino de Catral, 55.</h1>
+      <p class="lede">Estamos a un paso del centro de Almoradí, en el campo. Aparcamiento propio. La huerta se ve desde la sala.</p>
     </div>
   </section>
 
-  <section class="section section-horario">
+  <section class="section">
     <div class="container two-col">
       <div>
-        <p class="kicker">Cuándo nos encontrarás</p>
-        <h2>Horario y servicios.</h2>
-        <p>Para tener seguro el día y la hora, lo mejor es llamar antes. El horario puede variar en temporada alta y en eventos.</p>
-        <p><strong>Servicios:</strong> terraza, comedor privado, buenos cócteles, aparcamiento propio.</p>
-        <address>
-          <strong>Camino de Catral, 33</strong><br>
-          03160 Almoradí, Alicante<br>
-          <a href="https://maps.google.com/?q=Bar+Restaurante+Angelin+Camino+de+Catral+33+Almorad%C3%AD" rel="noopener" target="_blank">Cómo llegar →</a>
-        </address>
-        <p class="muted">📞 965 70 08 78 · 965 770 23 30</p>
+        <p class="kicker">Reservas</p>
+        <h2>Llámanos.</h2>
+        <div class="reserve-actions">
+          <a class="btn btn-primary" href="tel:+34965700878">📞 965 70 08 78</a>
+          <a class="btn btn-ghost" href="tel:+34965770233">📞 965 770 233</a>
+        </div>
+        <p class="muted">Atendemos en horario de restaurante. Si no contestamos, deja un mensaje y te llamamos.</p>
+        <div class="leaf-divider" aria-hidden="true">🌿</div>
+        <p class="kicker">Horario</p>
+        <table class="hours" aria-label="Horario semanal">
+          <tbody>
+            <tr><th>Lunes a viernes</th><td>13:00 – 16:00</td></tr>
+            <tr><th>Viernes noche</th><td>20:30 – 23:00</td></tr>
+            <tr><th>Sábados</th><td>13:00 – 16:30 · 20:30 – 23:30</td></tr>
+            <tr><th>Domingos</th><td>13:00 – 17:00</td></tr>
+          </tbody>
+        </table>
+        <p class="muted small">Horarios indicativos. En temporada de Jornadas el horario puede ampliarse — confirmar siempre por teléfono.</p>
       </div>
-      <div class="map-wrap">
-        <iframe
-          title="Mapa de Restaurante Angelín"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-0.808%2C38.099%2C-0.788%2C38.115&layer=mapnik&marker=38.106%2C-0.798"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div>
+        <div class="map-wrap" style="aspect-ratio: 1;">
+          <iframe
+            title="Mapa de Restaurante Angelín"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.795%2C38.110%2C-0.775%2C38.125&layer=mapnik&marker=38.117%2C-0.785"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <address style="margin-top: 1rem; font-style: normal;">
+          <strong>Camino de Catral, 55</strong><br>
+          03160 Almoradí, Alicante<br>
+          <a href="https://maps.google.com/?q=Restaurante+Angelin+Camino+de+Catral+55+Almoradi" rel="noopener" target="_blank">Abrir en Google Maps →</a>
+        </address>
       </div>
     </div>
   </section>
 
-  <section class="section section-reservas">
-    <div class="container reserve-strip">
-      <div>
-        <p class="kicker">Avísanos</p>
-        <h2>¿Vienes hoy?</h2>
+  <section class="section section-huerta">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Para celebraciones</p>
+        <h2>Banquetes, catering y domingos familiares.</h2>
+        <p>Tres formas de comer con Angelín cuando lo que tenéis entre manos no es una comida cualquiera.</p>
+      </header>
+      <div class="plate-grid">
+        <article class="plate plate-feature">
+          <h3>🥂 Banquetes hasta 50</h3>
+          <p>Comuniones, cumpleaños, comidas de empresa y de hermandades. Comedor privado, mesa larga, servicio dedicado. A la carta o menú predefinido.</p>
+        </article>
+        <article class="plate">
+          <h3>🚚 Catering</h3>
+          <p>Llevamos la cocina de Angelín a tu evento — particular o corporativo. Adaptamos el menú a lo que necesites.</p>
+        </article>
+        <article class="plate">
+          <h3>👪 Domingos familiares</h3>
+          <p>Tradición de la casa. Los domingos, mesa larga para familias con descuento especial. Avísanos cuántos sois.</p>
+        </article>
       </div>
-      <div class="reserve-actions">
-        <a class="btn btn-primary" href="tel:+34965700878">📞 Llamar</a>
-        <a class="btn btn-ghost" href="tel:+34965770233">📞 Segundo número</a>
-        <a class="btn btn-ghost" href="reservas.html">Formulario</a>
-      </div>
+      <p style="text-align: center; margin-top: 2rem;">
+        <a class="btn btn-primary" href="tel:+34965700878" style="background: var(--oro); color: var(--ink);">Llamar para celebraciones</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">O escríbenos</p>
+        <h2>Formulario rápido.</h2>
+        <p>Si te queda lejos llamar, dinos cuándo y cuántos sois y te confirmamos por teléfono o WhatsApp.</p>
+      </header>
+      <form class="contact-form" onsubmit="return false" aria-label="Consulta rápida" style="background: #fff; color: var(--ink); border-color: var(--line); max-width: 640px; margin: 0 auto;">
+        <label style="color: var(--ink);">Nombre <input type="text" name="nombre" autocomplete="name" required style="background: var(--cream); color: var(--ink); border-color: var(--line);"></label>
+        <label style="color: var(--ink);">Teléfono <input type="tel" name="tel" inputmode="tel" autocomplete="tel" style="background: var(--cream); color: var(--ink); border-color: var(--line);"></label>
+        <label style="color: var(--ink);">Cuéntanos <textarea rows="4" name="mensaje" placeholder="Día, hora, personas, celebración, alguna preferencia…" style="background: var(--cream); color: var(--ink); border-color: var(--line);"></textarea></label>
+        <button class="btn btn-primary" type="submit">Enviar consulta</button>
+        <p class="muted small" style="color: var(--muted);">Esta web es una demo. El formulario aún no envía datos — usa el teléfono para reservar de verdad.</p>
+      </form>
     </div>
   </section>
 
@@ -90,24 +138,24 @@
   <div class="container footer-grid">
     <div>
       <p class="footer-brand">Restaurante Angelín</p>
-      <p class="muted">Cocina autóctona · Vega Baja · Almoradí</p>
+      <p class="muted">La casa de Ángeles Berná · Almoradí</p>
     </div>
     <div>
       <p class="footer-title">Visítanos</p>
-      <p>Camino de Catral, 33 · 03160 Almoradí (Alicante)</p>
+      <p>Camino de Catral, 55 · 03160 Almoradí (Alicante)</p>
       <p>📞 965 70 08 78 · 965 770 23 30</p>
     </div>
     <div>
       <p class="footer-title">Mapa del sitio</p>
       <p><a href="historia.html">La casa</a> · <a href="carta.html">Carta</a></p>
-      <p><a href="galeria.html">Galería</a> · <a href="visitanos.html">Visítanos</a> · <a href="reservas.html">Reservas</a></p>
+      <p><a href="galeria.html">Galería</a> · <a href="visitanos.html">Visítanos</a></p>
     </div>
     <div>
       <p class="footer-title">Síguenos</p>
       <p><a href="https://www.instagram.com/barrestauranteangelin/" rel="noopener" target="_blank">Instagram</a></p>
     </div>
   </div>
-  <p class="legal">© <span id="anyo"></span> Bar Restaurante Angelín S.L. Web de demostración construida para esta propuesta.</p>
+  <p class="legal">© <span id="anyo"></span> Bar Restaurante Angelín S.L. · Web propuesta.</p>
 </footer>
 
 <script src="assets/js/main.js" defer></script>
