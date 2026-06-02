@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Restaurante Angelín">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c97a3a"/>
+      <stop offset="100%" stop-color="#a85a26"/>
+    </linearGradient>
+    <filter id="rough">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0.78  0 0 0 0 0.48  0 0 0 0 0.22  0 0 0 0.15 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="240" height="240" rx="14" fill="url(#bg)"/>
+  <rect width="240" height="240" rx="14" filter="url(#rough)" opacity="0.6"/>
+  <!-- "Tenedor" hecho a brochazo blanco: 3 púas + base -->
+  <g fill="#fff" stroke="none">
+    <path d="M88 50 Q86 56 88 110 L94 110 Q96 56 94 50 Q92 46 91 50 Q90 47 88 50 Z"/>
+    <path d="M116 46 Q114 52 116 112 L122 112 Q124 52 122 46 Q120 41 119 46 Q117 42 116 46 Z"/>
+    <path d="M144 50 Q142 56 144 110 L150 110 Q152 56 150 50 Q148 46 147 50 Q146 47 144 50 Z"/>
+    <path d="M85 108 Q120 118 155 108 Q160 113 155 118 Q120 128 85 118 Q80 113 85 108 Z"/>
+    <path d="M116 118 L122 118 L122 152 Q119 156 116 152 Z"/>
+  </g>
+  <!-- "Angelín" caligráfico amarillo (aproximación con texto cursivo) -->
+  <text x="120" y="200" text-anchor="middle"
+        font-family="'Brush Script MT','Lucida Handwriting',cursive"
+        font-size="62" font-style="italic" font-weight="700"
+        fill="#f0a83e" stroke="#f0a83e" stroke-width="1.5" stroke-linejoin="round" paint-order="stroke">
+    Angelín
+  </text>
+</svg>

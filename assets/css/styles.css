@@ -1,23 +1,24 @@
 /* ============ Restaurante Angelín — estilos ============
-   Paleta de huerta: verde campo, amarillo alcachofa y tierra tostada.
-   Distinta de El Ángel (terracota/oro). */
+   Paleta tomada de su logo real:
+   terracota (fondo del logo), amarillo Angelín (lettering) y blanco. */
 :root {
-  --cream: #f6efde;
-  --cream-2: #ecdfbe;
-  --ink: #1c2a1c;
-  --ink-2: #2f3d2e;
-  --muted: #6b6f5a;
-  --line: #d6cdb1;
-  --terracota: #3d6b3a;   /* verde huerta (acento principal) */
-  --terracota-d: #2a4f28; /* verde oscuro hover */
-  --oro: #d2b94a;         /* amarillo alcachofa */
-  --tostado: #a8754a;     /* tierra tostada (acento secundario) */
-  --shadow: 0 12px 32px rgba(28, 42, 28, 0.10);
+  --cream: #fbf6ee;
+  --cream-2: #f1e4cf;
+  --ink: #2a1c12;          /* marrón muy oscuro, casi negro */
+  --ink-2: #4a3424;
+  --muted: #8a7460;
+  --line: #e8d8bf;
+  --terracota: #b96a35;    /* terracota del logo (principal) */
+  --terracota-d: #8c4d24;  /* terracota oscuro hover */
+  --oro: #f0a83e;          /* amarillo Angelín del lettering */
+  --oro-d: #d88f24;
+  --tostado: #c97a3a;      /* tierra tostada del fondo */
+  --shadow: 0 12px 32px rgba(42, 28, 18, 0.12);
 }
 body {
   background:
-    radial-gradient(circle at 0% 0%, rgba(210, 185, 74, 0.06), transparent 35%),
-    radial-gradient(circle at 100% 100%, rgba(61, 107, 58, 0.06), transparent 40%),
+    radial-gradient(circle at 0% 0%, rgba(240, 168, 62, 0.07), transparent 40%),
+    radial-gradient(circle at 100% 100%, rgba(185, 106, 53, 0.07), transparent 45%),
     var(--cream);
   background-attachment: fixed;
 }
