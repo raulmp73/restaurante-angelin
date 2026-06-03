@@ -1,30 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Restaurante Angelín">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#c97a3a"/>
-      <stop offset="100%" stop-color="#a85a26"/>
+      <stop offset="0%" stop-color="#cf7d3c"/>
+      <stop offset="50%" stop-color="#b96a35"/>
+      <stop offset="100%" stop-color="#9c5825"/>
     </linearGradient>
-    <filter id="rough">
-      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
-      <feColorMatrix values="0 0 0 0 0.78  0 0 0 0 0.48  0 0 0 0 0.22  0 0 0 0.15 0"/>
+    <filter id="paper">
+      <feTurbulence type="fractalNoise" baseFrequency="1.8" numOctaves="2" seed="7"/>
+      <feColorMatrix values="0 0 0 0 0.55  0 0 0 0 0.35  0 0 0 0 0.18  0 0 0 0.22 0"/>
       <feComposite in2="SourceGraphic" operator="in"/>
     </filter>
+    <filter id="brush" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.4"/>
+    </filter>
   </defs>
+
+  <!-- fondo terracota con textura papel kraft -->
   <rect width="240" height="240" rx="14" fill="url(#bg)"/>
-  <rect width="240" height="240" rx="14" filter="url(#rough)" opacity="0.6"/>
-  <!-- "Tenedor" hecho a brochazo blanco: 3 púas + base -->
-  <g fill="#fff" stroke="none">
-    <path d="M88 50 Q86 56 88 110 L94 110 Q96 56 94 50 Q92 46 91 50 Q90 47 88 50 Z"/>
-    <path d="M116 46 Q114 52 116 112 L122 112 Q124 52 122 46 Q120 41 119 46 Q117 42 116 46 Z"/>
-    <path d="M144 50 Q142 56 144 110 L150 110 Q152 56 150 50 Q148 46 147 50 Q146 47 144 50 Z"/>
-    <path d="M85 108 Q120 118 155 108 Q160 113 155 118 Q120 128 85 118 Q80 113 85 108 Z"/>
-    <path d="M116 118 L122 118 L122 152 Q119 156 116 152 Z"/>
+  <rect width="240" height="240" rx="14" filter="url(#paper)" opacity="0.75"/>
+
+  <!-- tenedor blanco: 3 puas con forma de brochazo y base unida -->
+  <g fill="#fefcf6" filter="url(#brush)">
+    <!-- pua izquierda -->
+    <path d="M 84 38
+             Q 80 50 79 78
+             Q 78 100 82 122
+             L 92 122
+             Q 96 100 95 78
+             Q 94 50 90 38
+             Q 87 32 84 38 Z"/>
+    <!-- pua central (mas alta) -->
+    <path d="M 115 30
+             Q 110 44 109 76
+             Q 108 100 113 124
+             L 127 124
+             Q 132 100 131 76
+             Q 130 44 125 30
+             Q 120 22 115 30 Z"/>
+    <!-- pua derecha -->
+    <path d="M 150 38
+             Q 146 50 145 78
+             Q 144 100 148 122
+             L 158 122
+             Q 162 100 161 78
+             Q 160 50 156 38
+             Q 153 32 150 38 Z"/>
+    <!-- base curva que une las puas -->
+    <path d="M 78 116
+             Q 120 138 162 116
+             Q 168 122 162 130
+             Q 120 152 78 130
+             Q 72 122 78 116 Z"/>
+    <!-- mango corto que baja -->
+    <path d="M 113 130
+             L 127 130
+             L 126 154
+             Q 120 160 114 154 Z"/>
   </g>
-  <!-- "Angelín" caligráfico amarillo (aproximación con texto cursivo) -->
-  <text x="120" y="200" text-anchor="middle"
-        font-family="'Brush Script MT','Lucida Handwriting',cursive"
-        font-size="62" font-style="italic" font-weight="700"
-        fill="#f0a83e" stroke="#f0a83e" stroke-width="1.5" stroke-linejoin="round" paint-order="stroke">
-    Angelín
-  </text>
+
+  <!-- "Angelín" caligrafico amarillo brochazo -->
+  <text x="120" y="198" text-anchor="middle"
+        font-family="'Brush Script MT','Lucida Handwriting','Segoe Script',cursive"
+        font-size="68" font-style="italic" font-weight="700"
+        fill="#f0a83e" stroke="#e89525" stroke-width="0.5" paint-order="stroke">Angelín</text>
 </svg>
